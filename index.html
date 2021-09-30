@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="box">
+            <h1 class="heading">Smart Agriculture</h1> 
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="main_header">
+            Sensor's Live Data
+        </h1>
+    </div>
+    <div class="main_data">
+        <div class="card">
+            <img src="./images/humidity.png" class="logo"alt="">
+            <h2 class="card_heading">Humidity live data: </h2>
+            <div class="livedata" id="Humidity">
+                <pre id="Humidity"></pre>
+            </div>
+            <img class="lgif" src="./images/Curve-Loading.gif" alt="">           
+        </div>
+        <div class="card">
+            <img src="./images/temprature.png" class="logo"alt="">
+            <h2 class="card_heading">Temprature live data: </h2>
+            <div class="livedata">
+                <pre id="Temprature"></pre>
+            </div>
+            <img class="lgif" src="./images/Curve-Loading.gif" alt="">           
+        </div>
+        <div class="card">
+            <img src="./images/moisture.png" class="logo"alt="">
+            <h2 class="card_heading">Soil moisture live data: </h2>
+            <div class="livedata">
+                <pre id="Moisture">
+            </div>
+            <img class="lgif" src="./images/Curve-Loading.gif" alt="">           
+        </div>
+        <div class="card">
+            <img src="./images/waterlevel.png" class="logo"alt="">
+            <h2 class="card_heading">Water Level live data: </h2>
+            <div class="livedata">
+                <pre id="Waterlevel"></pre>
+            </div>
+            <img class="lgif" src="./images/Curve-Loading.gif" alt="">           
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
